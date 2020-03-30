@@ -10,7 +10,7 @@ namespace BinaryTreeProject
 
             BinaryTree binaryTree = new BinaryTree();
 
-            binaryTree.insert("Is it a cat?", "");
+            binaryTree.insert("Is it a cat?\n", "");
             binaryTree.display();
 
             string correctOrIncorrect;
@@ -23,9 +23,11 @@ namespace BinaryTreeProject
             {
                 //print root
                 correctOrIncorrect = Console.ReadLine();
-                if (correctOrIncorrect == "Yes")
+                if (correctOrIncorrect == "yes")
                 {
                     Console.WriteLine("Hooray! I win! :)");
+                    Console.WriteLine("Would you like to play again?");
+                    continuePlaying = Console.ReadLine();
                 }
                 else
                 {

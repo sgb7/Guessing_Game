@@ -22,17 +22,17 @@ public class Node
     {
         if (node == null)
         {
-            node = new Node(input)
+            node = new Node(input);
         }
         else
         {
             if(node.left == null)
             {
-                insertData(ref node.left, input)
+                insertData(ref node.left, input);
             }
             else
             {
-                insertData(ref node.right, input)
+                insertData(ref node.right, input);
             }
         }
     }
